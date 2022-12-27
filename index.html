@@ -9,7 +9,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Notifications page</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -23,40 +27,39 @@
   </style>
 </head>
 
-<body class="max-w-screen-md">
-  <main>
-    <section class="flex">
-      <h2>Notifications</h2>
-      <p>3</p>
+<body class="container">
+  <main class="main-area">
+    <section class="section-header">
+      <h2>Notifications <span>3</span></h2>
       <a href="#">Mark all as read</a>
     </section>
-    <section>
-      <div>
+    <section class="section-notifications">
+      <div class="card new">
         <img src="./assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber">
-        <div class="">
+        <div class="card-content">
           <p><a href="#">Mark Webber</a> reacted to your recent post <a href="#">My first tournament
               today!</a><span></span></p>
           <p>1m ago</p>
         </div>
       </div>
-      <div>
+      <div class="card new">
         <img src="./assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray">
-        <div class="">
+        <div class="card-content">
           <p><a href="#">Angela Gray</a> followed you<span></span></p>
           <p>5m ago</p>
         </div>
       </div>
-      <div>
+      <div class="card new">
         <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson">
-        <div class="">
+        <div class="card-content">
           <p><a href="#">Jacob Thompson</a> has joined your group <a href="#">Chess Club</a><span></span></p>
           <p>1 day ago</p>
         </div>
       </div>
-      <div>
+      <div class="card">
         <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin">
-        <div class="">
-          <p><a href="#">Rizky Hasanuddin</a> sent you a private message<span></span></p>
+        <div class="card-content">
+          <p><a href="#">Rizky Hasanuddin</a> sent you a private message</p>
           <p>5 days ago</p>
           <div>
             <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
@@ -64,25 +67,25 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="card">
         <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith">
-        <div class="">
+        <div class="card-content">
           <p><a href="#">Kimberly Smith</a> commented on your picture</p>
           <p>1 week ago</p>
         </div>
         <img src="./assets/images/image-chess.webp" alt="chess">
       </div>
-      <div>
+      <div class="card">
         <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson">
-        <div class="">
+        <div class="card-content">
           <p><a href="#">Nathan Peterson</a> reacted to your recent post <a href="#">5 end-game strategies to increase
               your win rate</a></p>
           <p>2 weeks ago</p>
         </div>
       </div>
-      <div>
+      <div class="card">
         <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim">
-        <div class="">
+        <div class="card-content">
           <p><a href="#">Anna Kim</a> left the group <a href="#">Chess Club</a></p>
           <p>2 weeks ago</p>
         </div>
